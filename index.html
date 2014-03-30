@@ -51,16 +51,19 @@
             <option value="African American">African American</option>
             <option value="Asian">Asian</option>
         </select>
+        
+        <script> var age = document.getElementByID('age_text').value;
+var eth = document.getElementByID('ethnic_text').value;</script>
+        document.write("I am "+age+" years old and "+eth+".");
         <input type="submit" value="submit">
     </fieldset>
 </form>
 
-var age = document.getElementByID('age_text').value;
-var eth = document.getElementByID('ethnic_text').value;
-
 <blockquote>
 </blockquote>
 <script>
+
+
     function onLoad() {
         playSound();//code
 }
