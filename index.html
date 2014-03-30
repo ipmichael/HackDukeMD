@@ -8,23 +8,34 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Hackdukemd</title>
+    <title>HackDukeMD</title>
   </head>
 
-  <body>
+  <body onload="onLoad()">
+  <script>
+    function onLoad() {
+        playSound();//code
+}
+    function playSound() {
+        document.getElementById('audio1').play();//code
+}
+</script>
+<audio id ="audio1" controls="controls">
+    <source src="Answer.mp3">
+</audio>
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/ipmichael/HackDukeMD">View on GitHub</a>
 
-          <h1 id="project_title">Hackdukemd</h1>
+          <h1 id="project_title">HackDukeMD</h1>
           <h2 id="project_tagline">michael and david</h2>
 
-            <section id="downloads">
+           <!--  <section id="downloads">
               <a class="zip_download_link" href="https://github.com/ipmichael/HackDukeMD/zipball/master">Download this project as a .zip file</a>
               <a class="tar_download_link" href="https://github.com/ipmichael/HackDukeMD/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+            </section> -->
         </header>
     </div>
 
@@ -38,26 +49,30 @@
 </p>
         <h1>
 <a name="--------a-cool-website------------buttons-dont-work----" class="anchor" href="#--------a-cool-website------------buttons-dont-work----"><span class="octicon octicon-link"></span></a>
-        a cool website
-
-    
-        buttons don't work
-
-<blockquote>
-<p>
-    </p>
-</blockquote>
-</h1>
-
-<p>
-</p>
-<form action="">
-  <fieldset>
-    <legend>Personal </legend>
-  </fieldset>
+        some statistics
+        </h1>
+<form>
+    <fieldset>
+        <legend>talk about yourself: </legend>
+        Age: <input type="text" size="30" id ="age_text"><br>
+        ethnicity: <select name="ethnicity" id ="ethnic_text"><br>
+            <option value=""></option>
+            <option value="Caucasian">Caucasian</option>
+            <option value="Hispanic">Hispanic</option>
+            <option value="African American">African American</option>
+            <option value="Asian">Asian</option>
+        </select>
+        <input type="submit" value="submit">
+    </fieldset>
 </form>
 
-<p></p>
+<script> var age = document.getElementByID('age_text').value;
+var eth = document.getElementByID('ethnic_text').value;
+  document.write("<p> I am " + age + " years old and " + eth + ". </p>" );
+</script>
+
+<blockquote>
+</blockquote>
       </section>
     </div>
 
@@ -68,8 +83,5 @@
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
-
   </body>
 </html>
