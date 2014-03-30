@@ -5,10 +5,13 @@
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Hackdukemd : michael and david" />
-
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
     <title>HackDukeMD</title>
+  <style>
+  #head1 {
+    text-align: center;
+  }
+  </style>  
   </head>
   <body onload="onLoad()">
   <script>
@@ -17,6 +20,12 @@
 }
     function playSound() {
         document.getElementById('audio1').play();//code
+}
+function myFunction()
+{alert("function");
+var age = document.getElementByID('age_text');
+var eth = document.getElementByID('ethnic_text');
+document.getElementById("head1").value = "<p> I am " + age + " years old and " + eth + ". </p>";
 }
 </script>
 <audio id ="audio1" controls="controls">
@@ -27,7 +36,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/ipmichael/HackDukeMD">View on GitHub</a>
 
-          <h1 id="project_title">HackDukeMD</h1>
+          <h1 id="project_title">A Look Into Homelessness and Poverty</h1>
           <h2 id="project_tagline">michael and david</h2>
 
            <!--  <section id="downloads">
@@ -45,17 +54,17 @@
 <p>
 </p>
         <h1 id = "head1">
-<a name="--------a-Look Into Homelessness------------buttons-dont-work----" class="anchor" href="#--------a-cool-website------------buttons-dont-work----"><span class="octicon octicon-link"></span></a>
+<a name="--------a-cool-website------------buttons-dont-work----" class="anchor" href="#--------a-cool-website------------buttons-dont-work----"><span class="octicon octicon-link"></span></a>
         some statistics
         </h1>
         
         <script> 
-function myFunction()
+/*function myFunction()
 {alert("function");
 var age = document.getElementByID('age_text');
 var eth = document.getElementByID('ethnic_text');
 document.getElementById("head1").value = "<p> I am " + age + " years old and " + eth + ". </p>";
-}
+}*/
 // var age = document.getElementByID('age_text');
 // /*var eth = document.getElementByID('ethnic_text');*/
 //   if (age = isNaN())
