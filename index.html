@@ -38,16 +38,13 @@
 </p>
         <h1>
 <a name="--------a-cool-website------------buttons-dont-work----" class="anchor" href="#--------a-cool-website------------buttons-dont-work----"><span class="octicon octicon-link"></span></a>
-        a cool website
-
-    
-        buttons don't work
+        some statistics
         </h1>
 <form>
     <fieldset>
-        <legend>Personal Information</legend>
-        Age: <input type="text" size="30"><br>
-        ethnicity: <select name="ethnicity">
+        <legend>talk about yourself: </legend>
+        Age: <input type="text" size="30" id = "age_text"><br>
+        ethnicity: <select name="ethnicity" id = "ethnic_text">
             <option value=""></option>
             <option value="Caucasian">Caucasian</option>
             <option value="Hispanic">Hispanic</option>
@@ -57,6 +54,10 @@
         <input type="submit" value="submit">
     </fieldset>
 </form>
+
+var age = document.getElementByID('age_text').value;
+var eth = document.getElementByID('ethnic_text').value;
+
 <blockquote>
 </blockquote>
 <script>
