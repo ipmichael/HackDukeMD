@@ -12,6 +12,19 @@
   </head>
 
   <body onload="onLoad()">
+  <script>
+
+
+    function onLoad() {
+        playSound();//code
+}
+    function playSound() {
+        document.getElementById('audio1').play();//code
+}
+</script>
+<audio id ="audio1" controls="controls">
+    <source src="Answer.mp3">
+</audio>
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
@@ -62,19 +75,6 @@ var eth = document.getElementByID('ethnic_text').value;
 
 <blockquote>
 </blockquote>
-<script>
-
-
-    function onLoad() {
-        playSound();//code
-}
-    function playSound() {
-        document.getElementById('audio1').play();//code
-}
-</script>
-<audio id ="audio1" controls="controls">
-    <source src="Answer.mp3">
-</audio>
       </section>
     </div>
 
@@ -85,8 +85,5 @@ var eth = document.getElementByID('ethnic_text').value;
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
-
   </body>
 </html>
