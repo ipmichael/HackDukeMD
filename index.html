@@ -5,20 +5,38 @@
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Hackdukemd : michael and david" />
-
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
     <title>HackDukeMD</title>
+  <style>
+  #head1 {
+    text-align: center;
+  }
+  </style>  
   </head>
-
-  <body>
-
+  <body onload="onLoad()">
+  <script>
+    function onLoad() {
+        playSound();//code
+}
+    function playSound() {
+        document.getElementById('audio1').play();//code
+}
+function myFunction()
+{alert("function");
+var age = document.getElementByID('age_text');
+var eth = document.getElementByID('ethnic_text');
+document.getElementById("head1").value = "<p> I am " + age + " years old and " + eth + ". </p>";
+}
+</script>
+<audio id ="audio1" controls="controls">
+    <source src="Answer.mp3">
+</audio>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/ipmichael/HackDukeMD">View on GitHub</a>
 
-          <h1 id="project_title">HackDukeMD</h1>
+          <h1 id="project_title">A Look Into Homelessness and Poverty</h1>
           <h2 id="project_tagline">michael and david</h2>
 
            <!--  <section id="downloads">
@@ -33,32 +51,50 @@
       <section id="main_content" class="inner">
         <p>
 </p>
-
 <p>
 </p>
-        <h1>
+        <h1 id = "head1">
 <a name="--------a-cool-website------------buttons-dont-work----" class="anchor" href="#--------a-cool-website------------buttons-dont-work----"><span class="octicon octicon-link"></span></a>
-        a cool website
-
-    
-        buttons don't work
+        some statistics
+        </h1>
+        
+        <script> 
+/*function myFunction()
+{alert("function");
+var age = document.getElementByID('age_text');
+var eth = document.getElementByID('ethnic_text');
+document.getElementById("head1").value = "<p> I am " + age + " years old and " + eth + ". </p>";
+}*/
+// var age = document.getElementByID('age_text');
+// /*var eth = document.getElementByID('ethnic_text');*/
+//   if (age = isNaN())
+//     {
+//       alert("oh no! that's not a number");
+//     }
+//     else {
+//   /*document.write("<p> I am " + age + " years old and " + eth + ". </p>" );*/
+//     alert("yay that's a number!")
+//     }
+</script>
 <form>
     <fieldset>
-        <legend>Personal Information</legend>
-        Age: <input type="text" size="30"><br>
-        ethnicity: <select name="ethnicity">
+        <legend>talk about yourself: </legend>
+        Age: <input type="text" size="30" id ="age_text"><br>
+        ethnicity: <select name="ethnicity" id ="ethnic_text"><br>
             <option value=""></option>
             <option value="Caucasian">Caucasian</option>
             <option value="Hispanic">Hispanic</option>
             <option value="African American">African American</option>
             <option value="Asian">Asian</option>
-        </select> 
+        </select>
+        <button onclick="myFunction()">Go</button>
     </fieldset>
 </form>
+
+
+
 <blockquote>
 </blockquote>
-</h1>
-
       </section>
     </div>
 
@@ -69,8 +105,5 @@
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
-
   </body>
 </html>
