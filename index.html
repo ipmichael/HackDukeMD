@@ -1,89 +1,74 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
+<head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Hackdukemd : michael and david" />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <title>HackDukeMD</title>
-  <style>
+<style>
   #project_title {
     text-align: center;
   }
-  #script3 {
-    float: left;
-    position: relative;
-    max-width: 640px;
-    padding: 20px 10px;
-    margin: 0 auto;
-    background: #212121;
-    
+  #hello {
+    text-align: center;
   }
-  </style>
-  </head>
-  <body onload="onLoad()">
-  <script>
-    function onLoad() {
-        playSound();//code
-}
-    function playSound() {
-        document.getElementById('audio1').play();//code
-}
-function myFunction()
-{
-var age = document.getElementById('age_text').value;
-var eth = document.getElementById('ethnic_text').value;
-document.getElementById("head1").innerHTML = "<p> I am " + age + " years old and " + eth + ". </p>";
-}
-</script>
+</style>
+</head>
+<body onload="onLoad()">
+<script>
+  function onLoad() {
+    playSound();//code
+  }
+  function playSound() {
+    document.getElementById('audio1').play();//code
+  }
+  function myFunction()
+  {
+    var age = document.getElementById('age_text').value;
+    var eth = document.getElementById('ethnic_text').value;
+    document.getElementById("head1").innerHTML = "<p> I am " + age + " years old and " + eth + ". </p>";
+  }
+  </script>
 <audio id ="audio1" controls="controls">
-    <source src="Answer.mp3">
+  <source src="Answer.mp3"> 
 </audio>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ipmichael/HackDukeMD">View on GitHub</a>
-
-          <h1 id="project_title">A Look Into Homelessness and Poverty</h1>
-
-           <!--  <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ipmichael/HackDukeMD/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ipmichael/HackDukeMD/tarball/master">Download this project as a tar.gz file</a>
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+        <a id="forkme_banner" href="https://github.com/ipmichael/HackDukeMD">View on GitHub</a>
+        <h1 id="project_title">A Look Into Homelessness and Poverty</h1>
+          <!--  <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/ipmichael/HackDukeMD/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/ipmichael/HackDukeMD/tarball/master">Download this project as a tar.gz file</a>
             </section> -->
-        </header>
-    </div>
-
+    </header>
+  </div>
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-<p>
-</p>
-<p>
-</p>
-      <h1 id ="head1">
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+    <h1 id ="head1">
 <a name="--------a-cool-website------------buttons-dont-work----" class="anchor" href="#--------a-cool-website------------buttons-dont-work----"><span class="octicon octicon-link"></span></a>
-        Fill Out the Form to Continue
-      </h1>
-        <script> 
-/*function myFunction()
+      <p id="hello">Fill out the form to continue</p>
+    </h1>
+    <!-- <script>
+function myFunction()
 {alert("function");
 var age = document.getElementByID('age_text');
 var eth = document.getElementByID('ethnic_text');
 document.getElementById("head1").value = "<p> I am " + age + " years old and " + eth + ". </p>";
-}*/
-// var age = document.getElementByID('age_text');
-// /*var eth = document.getElementByID('ethnic_text');*/
-//   if (age = isNaN())
-//     {
-//       alert("oh no! that's not a number");
-//     }
-//     else {
-//   /*document.write("<p> I am " + age + " years old and " + eth + ". </p>" );*/
-//     alert("yay that's a number!")
-//     }
-</script>
+}
+     var age = document.getElementByID('age_text');
+     var eth = document.getElementByID('ethnic_text');*/
+     if (age = isNaN())
+       {
+         alert("oh no! that's not a number");
+       }
+       else {
+         document.write("<p> I am " + age + " years old and " + eth + ". </p>" );*/
+         alert("yay that's a number!")
+       }
+</script> --> 
 <form>
     <fieldset>
         <legend>talk about yourself: </legend>
@@ -98,13 +83,8 @@ document.getElementById("head1").value = "<p> I am " + age + " years old and " +
         <a onclick="myFunction()">Go</a>
     </fieldset>
 </form>
-
-
-<blockquote>
-</blockquote>
-      </section>
-    </div>
-    
+</section>
+</div>
     <script src="paypal-button.min.js?merchant=ip.w.michael@gmail.com"
     data-button="donate"
     data-name="My donation"
@@ -112,9 +92,7 @@ document.getElementById("head1").value = "<p> I am " + age + " years old and " +
 ></script>
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
-    
       <footer class="inner">
-
         <p class="copyright">this page maintained by <a href="https://github.com/ipmichael">ipmichael</a> and <a href="https://github.com/dcastro123">dcastro</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
