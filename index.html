@@ -11,7 +11,7 @@
     <title>HackDukeMD</title>
   </head>
 
-  <body>
+  <body onload="onLoad()">
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
@@ -42,6 +42,7 @@
 
     
         buttons don't work
+        </h1>
 <form>
     <fieldset>
         <legend>Personal Information</legend>
@@ -58,8 +59,17 @@
 </form>
 <blockquote>
 </blockquote>
-</h1>
-
+<script>
+    function onLoad() {
+        playSound();//code
+}
+    function playSound() {
+        document.getElementById('audio1').play();//code
+}
+</script>
+<audio id ="audio1" controls="controls">
+    <source src="Roar.mp3">
+</audio>
       </section>
     </div>
 
