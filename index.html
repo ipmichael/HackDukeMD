@@ -22,10 +22,10 @@
         document.getElementById('audio1').play();//code
 }
 function myFunction()
-{alert("function");
-var age = document.getElementByID('age_text');
-var eth = document.getElementByID('ethnic_text');
-document.getElementById("head1").value = "<p> I am " + age + " years old and " + eth + ". </p>";
+{
+var age = document.getElementById('age_text').value;
+var eth = document.getElementById('ethnic_text').value;
+document.getElementById("head1").innerHTML = "<p> I am " + age + " years old and " + eth + ". </p>";
 }
 </script>
 <audio id ="audio1" controls="controls">
@@ -87,7 +87,7 @@ document.getElementById("head1").value = "<p> I am " + age + " years old and " +
             <option value="African American">African American</option>
             <option value="Asian">Asian</option>
         </select>
-        <button onclick="myFunction()">Go</button>
+        <a onclick="myFunction()">Go</a>
     </fieldset>
 </form>
 
