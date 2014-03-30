@@ -59,21 +59,27 @@
             <option value="African American">African American</option>
             <option value="Asian">Asian</option>
         </select>
-        <input type="submit" value="submit">
+        <button onclick="myFunction()">Go</button>
     </fieldset>
 </form>
 
 <script> 
+function myFunction()
+{
 var age = document.getElementByID('age_text');
-/*var eth = document.getElementByID('ethnic_text');*/
-  if (age = isNaN())
-    {
-      alert("oh no! that's not a number");
-    }
-    else {
-  /*document.write("<p> I am " + age + " years old and " + eth + ". </p>" );*/
-    alert("yay that's a number!")
-    }
+var eth = document.getElementByID('ethnic_text');
+document.write("<p> I am " + age + " years old and " + eth + ". </p>" );
+}
+// var age = document.getElementByID('age_text');
+// /*var eth = document.getElementByID('ethnic_text');*/
+//   if (age = isNaN())
+//     {
+//       alert("oh no! that's not a number");
+//     }
+//     else {
+//   /*document.write("<p> I am " + age + " years old and " + eth + ". </p>" );*/
+//     alert("yay that's a number!")
+//     }
 </script>
 
 <blockquote>
